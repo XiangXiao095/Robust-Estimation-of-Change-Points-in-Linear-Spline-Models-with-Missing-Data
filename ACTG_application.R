@@ -1,6 +1,6 @@
 library(speff2trial)
 library(ggplot2)
-
+library(dplyr)
 
 
 #Data processing
@@ -193,7 +193,7 @@ data.plot<-data.frame(X,Y)
 
 
 #Plot
-method_colors<-c("DR-AIPW"="#1b9e77","CC"="#d95f02")
+method_colors<-c("DR-AIPW"="#0072B2","CC"="#E69F00")
 method_fills<-method_colors
 data.est<-rbind(
   data.frame(method="DR-AIPW",x=c(0,tau_aipw,900),
